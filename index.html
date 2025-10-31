@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ukemeobong Eyo Okon | Portfolio</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 4%;
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #38bdf8;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      gap: 2rem;
+    }
+
+    .hero img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #38bdf8;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero-content h2 {
+      font-size: 2rem;
+      color: #38bdf8;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #e2e8f0;
+    }
+
+    .btn {
+      margin-top: 1.5rem;
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #38bdf8;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 15px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      background: rgba(56, 189, 248, 0.1);
+    }
+
+    .project-card h3 {
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-card a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.3);
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 3rem;
+    }
+
+    .socials {
+      margin-bottom: 1rem;
+    }
+
+    .socials i {
+      color: #38bdf8;
+      margin: 0 10px;
+      font-size: 1.4rem;
+      transition: transform 0.3s ease;
+    }
+
+    .socials i:hover {
+      transform: scale(1.2);
+      color: #0ea5e9;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.3rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        display: none;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 1rem 0;
+        text-align: center;
+      }
+
+      .menu-toggle {
+        display: block;
+        cursor: pointer;
+      }
+
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-content h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ukemeobong Eyo Okon</h1>
+    <i class="fa fa-bars menu-toggle"></i>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <img src="WhatsApp Image 2025-09-13 at 19.28.59_ea061107.jpg" alt="Ukemeobong Eyo Okon">
+    <div class="hero-content">
+      <h2>Frontend Developer</h2>
+      <p>
+        Hi, I'm <b>Ukemeobong Eyo Okon</b> — a passionate Frontend Developer 
+        dedicated to building responsive, interactive, and elegant web experiences. 
+        Creativity, functionality, and user experience are my guiding principles.
+      </p>
+      <button class="btn">Explore My Work</button>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Calculator App</h3>
+        <p>A modern calculator built with HTML, CSS, and JavaScript — featuring dark mode and smooth animation.</p>
+        <a href="calculator project/index.html">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Agric Project</h3>
+        <p>An agricultural web app connecting farmers and buyers, promoting transparency in product exchange.</p>
+        <a href="Agric project/index.html">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Shopping Project</h3>
+        <p>A shopping interface showcasing responsive layouts and dynamic product filtering.</p>
+        <a href="website/index.html">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="max-width:700px; margin:auto; line-height:1.8; color:#cbd5e1;">
+      I'm a creative, purpose-driven frontend engineer passionate about solving problems through code.
+      I enjoy turning ideas into functional digital experiences while continuously improving my skills.
+      I believe consistency and dedication open doors to excellence.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let's connect! You can find me on these platforms:</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/ukemeobong.okon.73/"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/ukemeobong-okon-7a27a0252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+      <a href=" https://ukhaey.github.io/My--portfolio--site/"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>Made with 💙 by Ukemeobong Eyo Okon</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ukemeobong Eyo Okon. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>
