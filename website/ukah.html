@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kagont - Contact Us</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(34, 3, 3);
+      background-color: #fff;
+    }
+
+    /* NAVBAR */
+    nav {
+      background-color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      list-style: none;
+      padding: 15px 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: rgb(34, 3, 3);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: brown;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background-image: url("pic-32 (1).jpg");
+      background-size: cover;
+      background-position: center;
+      height: 30rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      color: white;
+      font-size: 4rem;
+      text-align: center;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    /* CONTACT INFO SECTION */
+    .contact-section {
+      display: flex;
+      gap: 100px;
+      padding: 60px 100px;
+      flex-wrap: wrap;
+    }
+
+    .contact-section h1 {
+      margin-bottom: 10px;
+    }
+
+    .contact-section p {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .contact-left {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .contact-right {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="text"]:focus {
+      outline: none;
+      border-color: brown;
+    }
+
+    /* FOOTER */
+    footer {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      background-color: black;
+      color: white;
+      flex-wrap: wrap;
+      padding: 50px 20px;
+      margin-top: 50px;
+    }
+
+    footer div h1 {
+      margin-bottom: 10px;
+    }
+
+    footer p, footer a {
+      font-size: small;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    footer a:hover {
+      color: brown;
+    }
+
+    /* RESPONSIVENESS */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        padding: 0 10px;
+      }
+
+      .contact-section {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 40px;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <a href="#"><b>Kagont!</b></a>
+      <a href="index.html">Home</a>
+      <a href="ukhaey.html">Shop</a>
+      <a href="#">Single Products</a>
+      <a href="ukay.html">About</a>
+      <a href="ukah.html">Contact</a>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Contact Us</h1>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-left">
+      <h1>Kagon Brand Contact</h1>
+      <p>Dwelling and speedily ignorant any steepest. Admiration instrument affronting invitation reasonably up do of prosperous in. Shy saw declared age debating ecstatic man.</p>
+
+      <div style="display: flex; gap: 50px; flex-wrap: wrap;">
+        <div>
+          <h1>Working Hours</h1>
+          <p>Mon – Fri : 8:30 – 18:00</p>
+
+          <h1>Our Office Address</h1>
+          <p>5954 Old Cove Heath Rd<br>Eupora, Mississippi(MS), 39744</p>
+        </div>
+        <div>
+          <h1>Office Phone Number</h1>
+          <p>+1 (662) 258-5616</p>
+
+          <h1>Kagon Email</h1>
+          <p>Kagonswimwear@mail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <p>Your Email</p>
+      <input type="text">
+      <p>Subject</p>
+      <input type="text">
+      <p>Your Message</p>
+      <input type="text" style="height: 150px;">
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <h1><a href="index.html">Home</a></h1>
+      <h1><a href="ukay.html">About Us</a></h1>
+      <p>215, Woodlane Ave, Manchester, NH03102</p>
+      <p>Sun-Sat: 9:00AM - 17:00PM</p>
+      <p>(708)856-0657</p>
+    </div>
+
+    <div>
+      <h1>Get Help</h1>
+      <p>Help Center</p>
+      <p>Shipping Info</p>
+      <p>Returns</p>
+    </div>
+
+    <div>
+      <h1>Company</h1>
+      <p>Careers</p>
+      <p>About</p>
+      <p>Stores</p>
+      <p>Want to Collab?</p>
+    </div>
+
+    <div>
+      <h1>Quick Links</h1>
+      <p>Size Guide</p>
+      <p>Gift Card</p>
+      <p>Check Gift Card Balance</p>
+      <p>Contact Us</p>
+    </div>
+  </footer>
+
+</body>
+</html>

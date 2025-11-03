@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coming Soon</title>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        color: #222;
+    }
+
+    /* Message Section */
+    div.message {
+        text-align: center;
+        padding: 50px 20px;
+        margin-bottom: 50px;
+    }
+
+    div.message h1 {
+        font-size: 2.5rem;
+        color: #222; /* Changed from gold to dark color */
+        margin-bottom: 20px;
+    }
+
+    div.message p {
+        font-size: 1.2rem;
+    }
+
+    /* Footer Section */
+    section.footer {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        background-color: black;
+        color: white;
+        padding: 40px 20px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    section.footer div h1 {
+        margin-bottom: 10px;
+    }
+
+    section.footer div p, section.footer div a {
+        font-size: small;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+
+    section.footer div a:hover {
+        color: #aaa; /* subtle hover effect */
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        div.message h1 {
+            font-size: 2rem;
+        }
+
+        div.message p {
+            font-size: 1rem;
+        }
+
+        section.footer {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="message">
+    <h1><b>Great things are on the horizon</b></h1>
+    <p>Something big is brewing! Our store is in the works and will be launching soon!</p>
+</div>
+
+<section class="footer">
+    <div>
+        <h1><a href="index.html">Home</a></h1>
+        <h1><a href="index.html">About Us</a></h1>
+        <p>215, Woodlane Ave, Manchester, NH03102</p>
+        <p>Sun-Sat: 9:00AM-17:00PM</p>
+        <p>(708)856-0657</p>
+    </div>
+    <div>
+        <h1>Get Help</h1>
+        <p>Help Center</p>
+        <p>Shipping Info</p>
+        <p>Returns</p>
+    </div>
+    <div>
+        <h1>Company</h1>
+        <p>Careers</p>
+        <p>About</p>
+        <p>Stores</p>
+        <p>Want to Collab?</p>
+    </div>
+    <div>
+        <h1>Quick Lines</h1>
+        <p>Size Guide</p>
+        <p>Gift Card</p>
+        <p>Check Gift Card Balance</p>
+        <p>Contact Us</p>
+    </div>
+</section>
+
+</body>
+</html>
